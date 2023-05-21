@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package backend_files;
 
-/**
- *
- * @author HP
- */
 public class UserTypeChanger {
     
     private String usertype;
@@ -15,6 +7,7 @@ public class UserTypeChanger {
         //  These two methods are used when we want to convert database data to form's data
         //  Set user type
     public void setType(String user){
+        
         switch(user){
             case "C":
                 this.usertype = "Cashier";
@@ -49,6 +42,7 @@ public class UserTypeChanger {
         //These two methods are used to covert form data to database format
         //Set user type
     public void setDBType(String user){
+        
         switch(user){
             case "Cashier":
                 this.usertype = "C";
@@ -76,6 +70,7 @@ public class UserTypeChanger {
     
         //Get user type
     public String getDBType(){
+        
         return usertype;
     }
     
